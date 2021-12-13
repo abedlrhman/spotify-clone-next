@@ -11,8 +11,6 @@ function useSpotify() {
 
 	const { data: session, status } = useSession(); 
 
-	console.log(session)
-
 	useEffect(() => {
 		if (session) {
 			// if refresh access token attempt fails, direct user to login...
